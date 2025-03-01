@@ -1,399 +1,619 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-        <title>reveal.js</title>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-        <link rel="stylesheet" href="dist/reset.css" />
-        <link rel="stylesheet" href="dist/reveal.css" />
-        <link rel="stylesheet" href="dist/theme/tokyo-night.css" />
+    <title>reveal.js</title>
 
-        <!-- Theme used for syntax highlighted code -->
-        <link rel="stylesheet" href="plugin/highlight/tokyo-night.css" />
-        <link rel="stylesheet" href="plugin/chalkboard/style.css" />
-        <link rel="stylesheet" href="plugin/customcontrols/style.css" />
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/tokyo-night.css" />
 
-    <body>
-        <div class="reveal">
-            <div class="slides">
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/tokyo-night.css" />
+    <link rel="stylesheet" href="plugin/chalkboard/style.css" />
+    <link rel="stylesheet" href="plugin/customcontrols/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Веб-доступность</h1>
+                <img class="r-stretch" src="https://ktkv-presentations.github.io/uidev-4" data-type="qrcode" />
+            </section>
+            <section>
                 <section>
-                    <h1>Beautiful presentations</h1>
-                    <h2>New features</h2>
+                    <h1>Веб-доступность</h1>
+                    <h3>(accessibility, сокращённо a11y)</h3>
+                    <p>практика разработки веб-сайтов и приложений, доступных для всех пользователей, включая людей с
+                        ограниченными возможностями</p>
+                    <h4>Основные группы пользователей, которым нужна доступность</h4>
                     <ul>
-                        <li>Nerd icons </li>
                         <li>
-                            <code class="js">
-                                (inline) => code("highlighting")
-                            </code>
+                            Люди с нарушениями зрения
                         </li>
-                        <li>Automatic QR Code generation</li>
-                        <li>and much more!</li>
+                        <ul>
+                            <li>
+                                Полная слепота (используют экранные дикторы, например, NVDA, VoiceOver)
+                            </li>
+                            <li>
+                                Слабовидящие (используют увеличение экрана, контрастные темы)
+                            </li>
+                            <li>
+                                Дальтоники (некоторые цвета могут быть неразличимы)
+                            </li>
+
+                        </ul>
+
+                        <li>
+                            Люди с нарушениями слуха
+                        </li>
+                        <ul>
+                            <li>
+                                Нуждаются в субтитрах или текстовых альтернативных описаниях аудиоконтента
+                            </li>
+                        </ul>
                     </ul>
                 </section>
                 <section>
-                    <h1>CUSTOM TOKYONIGHT THEME</h1>
-                    <h2 class="fragment">THAT HAS</h2>
-                    <h3 class="fragment">MULTI</h3>
-                    <h4 class="fragment">LEVEL</h4>
-                    <h5 class="fragment">HEADING</h5>
-                    <h6 class="fragment">COLORS</h6>
-                    <h6>
-                        Thanks to this project
-                        <a
-                            href="https://github.com/tcmmichaelb139/obsidian-tokyonight">
-                            
-                        </a>
-                        for the colorscheme!
-                    </h6>
+                    <h1>Веб-доступность</h1>
+                    <h3>(accessibility, сокращённо a11y)</h3>
+                    <p>практика разработки веб-сайтов и приложений, доступных для всех пользователей, включая людей с
+                        ограниченными возможностями</p>
+                    <h4>Основные группы пользователей, которым нужна доступность</h4>
+                    <ul>
+                        <li>
+                            Пользователи с двигательными ограничениями
+                        </li>
+                        <ul>
+                            <li>
+                                Не могут использовать мышь, полагаются на клавиатуру, голосовые команды, специальные
+                            </li>
+                        </ul>
+
+
+                        <li>
+                            Люди с когнитивными и неврологическими особенностями
+                        </li>
+
+                        <ul>
+                            <li>
+                                Дислексия, расстройства аутистического спектра, синдром дефицита внимания
+                            </li>
+                            <li>
+                                Важно избегать сложных навигационных структур, обеспечивать понятный интерфейс
+                            </li>
+                        </ul>
+                    </ul>
                 </section>
                 <section>
-                    <section>
-                        <h1>Tailwind CSS</h1>
-                        <div class="grid grid-cols-2 gap-8">
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div class="col-span-2">
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h1>Custom classes</h1>
-                        <div class="grid grid-cols-3 gap-8">
-                            <div class="border-r">
-                                <h5>border-r</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-o">
-                                <h5>border-o</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-y">
-                                <h5>border-y</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-                <section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
+                    <h1>Важность доступности</h1>
+                    <div class="grid grid-cols-2 gap-4">
                         <div>
-                            Now also has Tokyo Night
-                            <code>highlight.js</code>
-                            highlighting implementation
+                            <h3>Этический аспект</h3>
+                            <p>каждый человек должен иметь равные возможности при использовании веба</p>
                         </div>
-                        <pre><code data-trim data-noescape>
-var foo = {
-    bar: function () {
-             alert("Hello, World!");
-         }
-};	
-					</code></pre>
-                    </section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <h5>Inline code highlighting is now also supported!</h5>
+                        <div>
+                            <h3>Юридические требования </h3>
+                            <p>в разных странах действуют законы, предписывающие соблюдение доступности</p>
+                            <small>
+                                <ul>
+                                    <li>
+                                        WCAG (Web Content Accessibility Guidelines) – международный стандарт
+                                    </li>
+                                    <li>
+                                        ADA (Americans with Disabilities Act, США) – требует доступности цифровых
+                                        продуктов
+                                    </li>
+                                    <li>
+                                        Section 508 (США) – обязательные стандарты для федеральных сайтов
+                                    </li>
+                                    <li>
+                                        EAA (European Accessibility Act, ЕС) – регулирует доступность сервисов в Европе
+                                    </li>
+                                </ul>
+                            </small>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h1>Важность доступности</h1>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div style="grid-column: span 2;">
+                            <h3>Бизнес-преимущества</h3>
+                            <p>улучшенная доступность увеличивает аудиторию, улучшает SEO и снижает юридические риски
+                            </p>
+                            <small>
+                                <ul>
+                                    <li>
+                                        Шире аудитория – доступные сайты могут использовать больше людей
+                                    </li>
+                                    <li>
+                                        SEO-оптимизация – доступные сайты лучше индексируются поисковиками
+                                    </li>
+                                    <li>
+                                        Снижение юридических рисков – компании могут избежать судебных разбирательств
+                                    </li>
+                                </ul>
+                            </small>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>WAI-ARIA</h1>
+                    <h4>Web Accessibility Initiative – Accessible Rich Internet Applications</h4>
+                    <p>набор атрибутов, разработанных для улучшения доступности сложных веб-приложений</p>
+                    <ul>
+                        <li>
+                            Разрабатывается и поддерживается W3C в рамках инициативы Web Accessibility Initiative (WAI).
+                        </li>
+                        <li>
+                            Делает сложные элементы (модальные окна, вкладки, меню, слайдеры) доступными для экранных
+                            дикторов и клавиатурной навигации.
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Когда необходимо использовать WAI-ARIA</h1>
+                    <h4>Когда семантического HTML недостаточно</h4>
+                    <p>
+                        Например, <code>&lt;div role="tablist"&gt;</code> может понадобиться в случаях, когда
+                        <code>&lt;button&gt;</code> и <code>&lt;nav&gt;</code> не решают задачу
+                    </p>
+                    <h4>Когда нужно описать состояние элемента</h4>
+                    <p>Например, <code>aria-expanded="true"</code> помогает экранным дикторам понять, открыт ли
+                        выпадающий список</p>
+                    <h4>Когда элемент динамически изменяет своё поведение</h4>
+                    <p>Например, <code>aria-live</code> используется для уведомлений, которые появляются без обновления
+                        страницы</p>
+                </section>
+                <section>
+                    <h1>Ограничения WAI-ARIA</h1>
+                    <div class="border-b">
+                        <h4>ARIA не делает элементы интерактивными </h4>
                         <p>
-                            Just wrap your code with
-                            <code>&lt;code&gt;</code>
-                            tag and get highlighting like this
-                            <code class="js">
-                                const foo = () => {return bar}
-                            </code>
-                            !
+                            например, <code>&lt;div role="button"&gt;</code> не обрабатывает нажатие Enter/Space, пока
+                            разработчик сам не добавит это через JavaScript
                         </p>
-                    </section>
-                </section>
-                <section>
-                    <h1>Mermaid for beautiful diagrams!</h1>
-                    <div class="mermaid">
-                        <pre>
-						erDiagram
-    CUSTOMER ||--o{ ORDER : ""
-    CUSTOMER {
-        string name
-        string custNumber
-        string sector
-    }
-    ORDER ||--|{ LINE-ITEM : contains
-    ORDER {
-        int orderNumber
-        string deliveryAddress
-    }
-    LINE-ITEM {
-        string productCode
-        int quantity
-        float pricePerUnit
-    }
-    ORDER ||--|{ STUDENT : contains
-    STUDENT {
-        int orderNumber
-        string deliveryAddress
-    }
-						</pre
-                        >
                     </div>
-                    <h4>
-                        Check documentation
-                        <a href="https://mermaid.js.org/config/usage.html">
-                            here
-                        </a>
-                        !
-                    </h4>
-                </section>
-                <section>
-                    <h1>Now supports Nerd font icons!</h1>
-                    <div>Nerdy project that adds icons to font itself</div>
-                    <h6>
-                        Checkout their site for icons like this
-                        <a href="https://www.nerdfonts.com/">󰖟</a>
-                        !
-                    </h6>
-                </section>
-                <section>
-                    <h1>Now supports automatic QRCode generation!</h1>
-                    <div>
-                        With GoQR you can just add data-type and alt attributes
-                        to your
-                        <code class="html">
-                            &lt;img src="https://goqr.me/" data-type="qrcode" /
-                            &gt;
-                        </code>
-                        tag!
+                    <br>
+                    <div class="border-b">
+                        <h4>ARIA не заменяет семантический HTML</h4>
+                        <p>
+                            Использование <code>&lt;button&gt;</code> предпочтительнее, чем
+                            <code>&lt;div role="button"&gt;</code>
+                        </p>
                     </div>
-                    <img
-                        class="r-stretch"
-                        src="https://goqr.me/"
-                        data-type="qrcode" />
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>Основные концепции WAI-ARIA</h1>
+                    <h3>Роли</h3>
+                    <p>определяет, как элемент воспринимается вспомогательными технологиями, такими как экранные дикторы
+                    </p>
+                    <h4>Категории ролей</h4>
+                    <div class="border-b">
+                        <h5>Лэндмарки</h5>
+                        <p>определяют основную структуру страницы</p>
+                        <ul>
+                            <li>
+                                <code>banner</code> – верхний заголовок сайта
+                            </li>
+                            <li>
+                                <code>main</code> – основной контент страницы
+                            </li>
+                            <li>
+                                <code>navigation</code> – область навигации
+                            </li>
+                            <li>
+                                <code>complementary</code> – дополнительный контент, связанный с основным
+                            </li>
+                        </ul>
+                    </div>
                 </section>
                 <section>
-                    <h1>New changes on the way!</h1>
+                    <h4>Категории ролей</h4>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="border-b">
+                            <h5>Интерактивные элементы</h5>
+                            <p>создают доступные пользовательские интерфейсы</p>
+                            <ul>
+                                <li>
+                                    <code>button</code> – кнопка.
+                                </li>
+                                <li>
+                                    <code>link</code> – ссылка.
+                                </li>
+                                <li>
+                                    <code>menu</code> – меню навигации.
+                                </li>
+                                <li>
+                                    <code>tab</code>, <code>tabpanel</code>, <code>tablist</code> – вкладки.
+                                </li>
+                                <li>
+                                    <code>progressbar</code>, <code>slider</code>, <code>tree</code> – сложные виджеты
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="border-b">
+                            <h5>Структурные роли</h5>
+                            <p>группируют элементы</p>
+                            <ul>
+                                <li>
+                                    <code>region</code> – логически связанная область контента.
+                                </li>
+                                <li>
+                                    <code>group</code> – объединяет связанные элементы (например, радиокнопки)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </section>
-            </div>
+                <section>
+                    <h4>Категории ролей</h4>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="border-b">
+                            <h5>Состояния</h5>
+                            <p>описывают текущие характеристики элемента</p>
+                            <ul>
+                                <li>
+                                    <code>aria-disabled="true"</code> – элемент отключён
+                                </li>
+                                <li>
+                                    <code>aria-expanded="true"</code> – раскрыт ли элемент (например, выпадающее меню)
+                                </li>
+                                <li>
+                                    <code>aria-hidden="true"</code> – скрыт ли элемент для вспомогательных технологий
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="border-b">
+                            <h5>Свойства</h5>
+                            <p>предоставляют дополнительную информацию</p>
+                            <ul>
+                                <li>
+                                    <code>aria-label="Описание"</code> – описание элемента для экранного диктора
+                                </li>
+                                <li>
+                                    <code>aria-labelledby="id"</code> – связывает элемент с другим, который его
+                                    описывает
+                                </li>
+                                <li>
+                                    <code>aria-describedby="id"</code> – предоставляет дополнительную информацию
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h4>Категории ролей</h4>
+                    <div class="border-b">
+                        <h5>Живые регионы</h5>
+                        <p>автоматически сообщают пользователям о появлении нового контента</p>
+                        <ul>
+                            <li>
+                                <code>aria-live</code> Определяет, как контент будет озвучиваться скринридером (polite,
+                                assertive)
+                            </li>
+                            <li>
+                                <code>aria-relevant</code> Что именно изменяется (например, additions, removals)
+                            </li>
+                            <li>
+                                <code>aria-atomic</code> Сообщать ли весь контент целиком
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>Использование WAI-ARIA</h1>
+                    <div class="border-r">
+                        <h6 style="color: var(--red)">Семантический HTML всегда предпочтительнее</h6>
+                    </div>
+                    <div style="display: flex; gap: 2rem; align-items: center;">
+                        <pre><code data-trim class="html">
+&lt;div
+    role="button"
+    tabindex="0"
+    onclick="alert('Clicked!')"&gt;
+        Click me
+&lt;/div&gt;
+                        </code></pre>
+                        <h1>
+                            &lt;
+                        </h1>
+                        <pre><code data-trim class="html">
+&lt;button&gt;Click me&lt;/button&gt;
+                        </code></pre>
+                    </div>
+                </section>
+                <section>
+                    <h1>Доступная кнопка с ARIA</h1>
+                    <pre><code data-trim class="html">
+&lt;button aria-pressed="false" onclick="toggleState(this)"&gt;Toggle&lt;/button&gt;
+&lt;script&gt;
+  function toggleState(btn) {
+    const pressed = btn.getAttribute("aria-pressed") === "true";
+    btn.setAttribute("aria-pressed", !pressed);
+  }
+&lt;/script&gt;
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Доступные вкладки</h1>
+                    <pre><code data-trim class="html">
+&lt;div role="tablist"&gt;
+  &lt;button role="tab" aria-selected="true"&gt;Tab 1&lt;/button&gt;
+  &lt;button role="tab" aria-selected="false"&gt;Tab 2&lt;/button&gt;
+&lt;/div&gt;
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Доступное модальное окно</h1>
+                    <pre><code data-trim class="html">
+&lt;div role="dialog" aria-labelledby="modal-title" aria-hidden="true"&gt;
+  &lt;h2 id="modal-title"&gt;Modal Window&lt;/h2&gt;
+  &lt;p&gt;Content here...&lt;/p&gt;
+&lt;/div&gt;
+                    </code></pre>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>Инструменты тестирования доступности</h1>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <h4>
+                                Автоматизированные инструменты
+                            </h4>
+                            <ul>
+                                <li>
+                                    Lighthouse (встроен в Chrome DevTools)
+                                </li>
+                                <li>
+                                    axe DevTools (расширение Chrome)
+                                </li>
+                                <li>
+                                    WAVE (онлайн-анализатор доступности)
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>
+                                Ручное тестирование
+                            </h4>
+                            <ul>
+                                <li>
+                                    Скринридеры:
+                                </li>
+                                <ul>
+                                    <li>
+                                        Windows: NVDA, JAWS
+                                    </li>
+                                    <li>
+                                        Mac: VoiceOver
+                                    </li>
+                                    <li>
+                                        Chrome: ChromeVox
+                                    </li>
+                                </ul>
+                                <li>
+                                    Тестирование клавиатурой:
+                                </li>
+                                <ul>
+                                    <li>
+                                        Tab – переключение между элементами
+                                    </li>
+                                    <li>
+                                        Enter/Space – активация кнопок
+                                    </li>
+                                    <li>
+                                        Arrow keys – перемещение по сложным виджетам
+                                    </li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                </section>
+            </section>
         </div>
+    </div>
 
-        <script src="dist/reveal.js"></script>
-        <script src="plugin/notes/notes.js"></script>
-        <script src="plugin/markdown/markdown.js"></script>
-        <script src="plugin/highlight/highlight.js"></script>
-        <script src="plugin/qrcode/qrcode.js"></script>
-        <script src="plugin/mermaid/mermaid.js"></script>
-        <script src="plugin/chalkboard/plugin.js"></script>
-        <script src="plugin/customcontrols/plugin.js"></script>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/qrcode/qrcode.js"></script>
+    <script src="plugin/mermaid/mermaid.js"></script>
+    <script src="plugin/chalkboard/plugin.js"></script>
+    <script src="plugin/customcontrols/plugin.js"></script>
 
-        <script>
-            tailwind.config = {
-                corePlugins: {
-                    preflight: false,
-                },
-            }
-        </script>
-        <script>
-            // More info about initialization & config:
-            // - https://revealjs.com/initialization/
-            // - https://revealjs.com/config/
+    <script>
+        tailwind.config = {
+            corePlugins: {
+                preflight: false,
+            },
+        }
+    </script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
 
-            const colors = {
-                blue0: 'rgb(61, 89, 161)',
-                blue: 'rgb(122, 162, 247)',
-                cyan: 'rgb(125, 207, 255)',
-                magenta: 'rgb(187, 154, 247)',
-                orange: 'rgb(255, 158, 100)',
-                yellow: 'rgb(224, 175, 104)',
-                green: 'rgb(158, 206, 106)',
-                teal: 'rgb(26, 188, 156)',
-                red: 'rgb(255, 117, 127)',
-                red1: 'rgb(219, 75, 75)',
-                fg: 'rgb(192, 202, 245)',
-                bg: 'rgb(26, 27, 38)',
-                transparent: '#00000000',
-            }
+        const colors = {
+            blue0: 'rgb(61, 89, 161)',
+            blue: 'rgb(122, 162, 247)',
+            cyan: 'rgb(125, 207, 255)',
+            magenta: 'rgb(187, 154, 247)',
+            orange: 'rgb(255, 158, 100)',
+            yellow: 'rgb(224, 175, 104)',
+            green: 'rgb(158, 206, 106)',
+            teal: 'rgb(26, 188, 156)',
+            red: 'rgb(255, 117, 127)',
+            red1: 'rgb(219, 75, 75)',
+            fg: 'rgb(192, 202, 245)',
+            bg: 'rgb(26, 27, 38)',
+            transparent: '#00000000',
+        }
 
-            Reveal.initialize({
-                hash: true,
-                // Learn about plugins: https://revealjs.com/plugins/
-                plugins: [
-                    RevealMarkdown,
-                    RevealHighlight,
-                    RevealNotes,
-                    RevealMermaid,
-                    RevealChalkboard,
-                    RevealCustomControls,
-                ],
-                slideNumber: true,
-                customcontrols: {
-                    controls: [
-                        {
-                            icon: '<div></div>',
-                            title: 'Clear canvas (DEL)',
-                            action: 'RevealChalkboard.clear();',
-                        },
-                        {
-                            icon: '<div></div>',
-                            title: 'Toggle chalkboard (B)',
-                            action: 'RevealChalkboard.toggleChalkboard();',
-                        },
-                        {
-                            icon: '<div></div>',
-                            title: 'Toggle notes canvas (C)',
-                            action: 'RevealChalkboard.toggleNotesCanvas();',
-                        },
-                    ],
-                },
-                chalkboard: {
-                    boardmarkerWidth: 5,
-                    boardmarkers: [
-                        {
-                            color: colors.bg,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.fg,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.blue,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.red,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.green,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.yellow,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.teal,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.orange,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                    ],
-                    chalks: [
-                        {
-                            color: colors.bg,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.fg,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.blue,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.red,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.green,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.yellow,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.teal,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.orange,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                    ],
-                },
-                mermaid: {
-                    securityLevel: 'loose',
-                    theme: 'dark',
-                    themeVariables: {
-                        darkMode: true,
-                        textColor: colors.fg,
-                        background: colors.bg,
-                        mainBkg: colors.bg,
-                        lineColor: colors.fg,
+        Reveal.initialize({
+            hash: true,
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [
+                RevealMarkdown,
+                RevealHighlight,
+                RevealNotes,
+                RevealMermaid,
+                RevealChalkboard,
+                RevealCustomControls,
+            ],
+            slideNumber: true,
+            customcontrols: {
+                controls: [
+                    {
+                        icon: '<div></div>',
+                        title: 'Clear canvas (DEL)',
+                        action: 'RevealChalkboard.clear();',
                     },
+                    {
+                        icon: '<div></div>',
+                        title: 'Toggle chalkboard (B)',
+                        action: 'RevealChalkboard.toggleChalkboard();',
+                    },
+                    {
+                        icon: '<div></div>',
+                        title: 'Toggle notes canvas (C)',
+                        action: 'RevealChalkboard.toggleNotesCanvas();',
+                    },
+                ],
+            },
+            chalkboard: {
+                boardmarkerWidth: 5,
+                boardmarkers: [
+                    {
+                        color: colors.bg,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.fg,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.blue,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.red,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.green,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.yellow,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.teal,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.orange,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                ],
+                chalks: [
+                    {
+                        color: colors.bg,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.fg,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.blue,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.red,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.green,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.yellow,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.teal,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.orange,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                ],
+            },
+            mermaid: {
+                securityLevel: 'loose',
+                theme: 'dark',
+                themeVariables: {
+                    darkMode: true,
+                    textColor: colors.fg,
+                    background: colors.bg,
+                    mainBkg: colors.bg,
+                    lineColor: colors.fg,
                 },
-            })
-        </script>
-    </body>
-</html>
+            },
+        })
+    </script>
+</body>
 
+</html>
